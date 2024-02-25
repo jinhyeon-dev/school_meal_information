@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/instance_manager.dart';
 import 'package:school_meal_information/controller/main_controller.dart';
 
 class MainScreen extends StatelessWidget {
@@ -85,7 +84,7 @@ class MainScreen extends StatelessWidget {
                                     controller.mealType, controller.schoolInfo),
                                 builder: (context, snapshot) {
                                   return Text(
-                                    snapshot.data ?? '',
+                                    snapshot.data ?? '급식없음',
                                   );
                                 },
                               ),

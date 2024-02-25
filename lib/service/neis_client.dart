@@ -8,6 +8,7 @@ class NeisClient {
   final GetConnect _connect = Get.put(GetConnect());
 
   Future<Map<String, dynamic>> getMeal(String officeOfEduCode, String adminStandardsCode) async {
+
     String date = DateFormat('yyyyMMdd').format(DateTime.now());
 
     Response response = await _connect.get(

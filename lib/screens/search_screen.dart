@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/instance_manager.dart';
 import 'package:school_meal_information/controller/school_controller.dart';
 import 'package:school_meal_information/model/school_info.dart';
 
@@ -75,7 +74,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     itemCount: _data.length,
                   );
                 }
-                return const Center(child: CircularProgressIndicator());
+                return const Center(child: CircularProgressIndicator()); // loading
               },
               future: Get.find<SchoolController>()
                   .getSchools(controller.index, controller.name),
