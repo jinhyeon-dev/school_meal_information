@@ -3,7 +3,6 @@ enum MealType {
   lunch("중식"),
   dinner("석식");
   const MealType(this.name);
-
   final String name;
 
 }
