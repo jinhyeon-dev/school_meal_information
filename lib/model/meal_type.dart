@@ -4,5 +4,4 @@ enum MealType {
   dinner("석식");
   const MealType(this.name);
   final String name;
-
 }
